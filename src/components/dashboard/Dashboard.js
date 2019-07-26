@@ -6,6 +6,7 @@ export default class Dashboard extends Component {
         return (
             <div>
                 <Product />
+                Dashboard
             </div>
         )
     }
