@@ -16,7 +16,9 @@ export default class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Dashboard />
+        <Dashboard
+          products={this.state.products}
+        />
         <Form />
       </div>
     );
