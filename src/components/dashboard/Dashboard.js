@@ -4,11 +4,7 @@ import Product from '../product/Product';
 export default class Dashboard extends Component {
     render() {
         const mappedProducts = this.props.products.map(element => (
-            <Product
-                product_name={element.product_name}
-                price={element.price}
-                image_url={element.image_url}
-            />
+            <Product />
         ))
         return (
             <div className='products'>

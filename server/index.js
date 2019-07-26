@@ -7,6 +7,11 @@ const {PORT, CONNECTION_STRING} = process.env
 
 app.use(express());
 
+//Endpoints
+app.get('/api/products', ctrl.getAll)
+// app.post('/api/products', ctrl.add)
+
+// Listener
 massive(CONNECTION_STRING)
     .then((database) => {
         app.set('db', database)

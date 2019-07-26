@@ -4,9 +4,9 @@ export default class Form extends Component {
     constructor() {
         super()
         this.state = {
-            imageUrl: '',
             productName: '',
-            price: ''
+            price: '',
+            imageUrl: ''
         }
     }
     handleAddImage = (event) => {
